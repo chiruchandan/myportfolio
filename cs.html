@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="cssicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=M+PLUS+1p:wght@100&family=Montserrat:wght@200&family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    *{
+        font-family: 'Cinzel', serif;
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+
+    body{
+        background: url("https://wallpapercave.com/wp/wp11976905.jpg");
+        /* background-size: cover; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .context h3{
+        color: white;
+    } 
+
+    .context{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        border-radius: 20px;
+        background: rgba(62, 59, 59, 0.3);
+        backdrop-filter: saturate(180%) blur(5px);
+    }
+    pre,h5,h3,h4,p{
+            color: white;
+            font-size: 25px;
+    }
+    .list{
+     font-size: 25px;
+     text-decoration: none;
+     color: whitesmoke;
+     }
+    .li{
+     padding-left: 50px;
+    }
+    .contextc{
+        margin-top: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        border-radius: 20px;
+        background: rgba(62, 59, 59, 0.3);
+        backdrop-filter: saturate(180%) blur(5px);
+    }
+
+</style>
+
+<body>
+        <!-- css start -->
+        <div class="context" id="css">
+        <h3>
+            <!-- Mention the Subtopic heading in here -->
+            CSS
+        </h3>
+        <!-- Mention the content in here -->
+        <p>CSS is the language we use to style a Web page.</p>   
+        <h5> What is CSS?</h5>
+       
+       <pre>        CSS stands for Cascading Style Sheets
+        CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+        CSS saves a lot of work. It can control the layout of multiple web pages all at once
+        External stylesheets are stored in CSS files </pre> 
+       
+        <h5>Syntax:</h5>
+        <img class="scss"src="Screenshot 2023-08-20 125740.png" alt="">
+        <pre>          The selector points to the HTML element you want to style.
+
+          The declaration block contains one or more declarations separated by semicolons.
+          
+          Each declaration includes a CSS property name and a value, separated by a colon.
+          
+          Multiple CSS declarations are separated with semicolons, and declaration blocks are 
+          surrounded by curly braces.</pre>
+        <h5>Advantages:</h5>
+        <img src="cssadv.png" alt="">
+
+        <h5>Topics:</h5>
+         <a class="list" href="#type">Types of CSS</a>
+         <br>
+          <a class="list" href="#box">CSS Box Model</a>
+          <br>
+          <a class="list" href="#ground">Back Ground Properties</a>
+          <br>
+          <a class="list" href="#selector">Types of Selector</a>
+          <br>
+          <a class="list" href="">Types of Combinator </a>
+          <br>
+          <a class="list" href="">Opacity</a>               
+           <br>
+          <a class="list" href="">CSS Gradient</a>
+           <br>
+          <a class="list" href="">Psecudo Class</a>
+           <br>
+          <a class="list" href="">Psecudo Element</a>
+           <br>
+          <a class="list" href="">CSS Display Property</a>
+           <br>
+          <a class="list" href="">Types of Position</a>
+           <br>
+          <a class="list" href="">Types of Transform</a>
+           <br>
+          <a class="list" href="">Animation</a>
+           <br>
+          
+    </div>
+    <div class="contextc" id="type">
+        <h5>Types of CSS</h5>
+        <pre>    CSS is a stylesheet language used to describe the presentation of a document
+     written in HTML or XML (including XML dialects such as SVG, MathML or XHTML).
+     CSS describes how elements should be rendered on screen, on paper, in speech, 
+      or on other media.
+        </pre>
+        <h5>Three Ways to Insert CSS
+        </h5>
+        <pre> 1. Inline CSS :
+         An inline style may be used to apply a unique style for a single element.
+         To use inline styles, add the style attribute to the relevant element. The style
+         attribute can contain any CSS property.
+
+         syntax:
+         <img src="Screenshot 2023-08-20 193228.png" alt="" width="80%">
+
+  2. Internal CSS:
+         An internal style sheet may be used if one single HTML page has a unique style.
+         The internal style is defined inside the style element, inside the head section.
+
+         syntax:
+         <img src="Screenshot 2023-08-20 193856.png" alt="" width="80%">
+
+  3. External CSS:
+         With an external style sheet, you can change the look of an entire website by 
+         changing just one file!
+         Each HTML page must include a reference to the external style sheet file inside
+          the link element, inside the head section.
+
+          syntax 1:
+          <img src="Screenshot 2023-08-20 194203.png" alt="" width="80%">
+
+          syntax 2:
+          <img src="Screenshot 2023-08-20 194229.png" alt="" width="80%">
+      </pre>
+        
+
+    </div>
+    <div class="contextc" id="box">
+        <h5> CSS Box Model</h5>
+        <pre>               In CSS, the term "box model" is used when talking about design and layout.
+               The CSS box model is essentially a box that wraps around every HTML element. 
+                It consists of: margins, borders, padding, and the actual content.
+
+                         <img src="Screenshot 2023-08-20 194841.png" alt="" width="70%">
+
+
+                         Content - The content of the box, where text and images appear
+
+                         Padding - Clears an area around the content. The padding is transparent
+
+                         Border - A border that goes around the padding and content
+
+                         Margin - Clears an area outside the border. The margin is transparent
+
+                      Margin is transparent
+                      Box model allows to add border around elemrny and defines the space between
+        </pre>
+    </div>
+    <div class="contextc" id="ground">
+        <h5>Back Ground Properties </h5>
+        <pre>   The CSS background property are used to add background effect to selected element
+
+    -> background Properties :
+
+               background-color :    Specifies the background color to be used
+   
+               background-image	:    Specifies ONE or MORE background images to be used	           
+
+               background-position : Specifies the position of the background images	
+
+               background-size :     Specifies the size of the background images	
+
+               background-repeat :    Specifies how to repeat the background images	
+
+               background-origin :     Specifies the positioning area of the background images		
+
+               background-clip :       Specifies the painting area of the background images	
+
+               background-attachment :  Specifies whether the background images are
+                                                           fixed or scrolls with the rest of the page
+    
+        </pre>
+    </div>
+    <div class="contextc" id="selector">
+        <h5>CSS Selector</h5>
+        <p>CSS selectors are used to find an html element which we want to style </p>
+        <h5>types of selector</h5>
+        <pre>           1. Tag/Name/Type :
+               The element selector selects HTML elements based on the element name.
+
+                     syntax:
+                     <img src="Screenshot 2023-08-20 203349.png" alt="">
+
+         2. Class Selector :
+            The class selector selects HTML elements with a specific class attribute.
+            To select elements with a specific class, write a period (.) character, followed by the class name.
+
+                     syntax:
+                     <img src="Screenshot 2023-08-20 203416.png" alt="">
+
+         3. Id Selector :
+            The id selector uses the id attribute of an HTML element to select a specific element.
+            The id of an element is unique within a page, so the id selector is used to select one unique element!
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element
+
+                     syntax:
+                     <img src="Screenshot 2023-08-20 203404.png" alt="">
+
+         4. Universal Selector:
+            The universal selector (*) selects all HTML elements on the page.
+
+                     syntax:
+                     <img src="Screenshot 2023-08-20 203449.png" alt="">
+
+
+        </pre>
+
+    </div>
+   
+  
+
+
+</body>
+</html>

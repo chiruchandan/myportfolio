@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="pencil.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+      *{
+        margin: 0px;
+      }
+      /* sheet 1 */
+      body{
+        background-color:burlywood;
+        height: 1850px;
+      }
+      .main{
+        display: flex;
+        position: fixed;
+        height: 65px;
+        width: 100%;
+        background-color:rgb(24, 19, 19 ,0.2) ;
+        backdrop-filter: blur(8px);
+        z-index: 1;
+      }
+      .im{
+        margin-top: 10px;
+        height: 40px;
+        width: 40px;
+        padding-left: 40px;
+      }
+      .bar
+      {
+        margin-left: 300px;
+      }
+      h1{
+        margin-top: 10px;
+        display: flex;
+        font-size: 60px;
+        color:yellow;
+      }
+      .search-bar{
+       display: inline;
+       margin-top: 0px;
+       margin-left: 40px;
+       width:260px ;
+       height: 40px;
+       border-radius: 50px;
+       background-color: transparent;
+      }
+      .sbar{
+       font-family: inherit;
+       width: 200px;
+       border: 0;
+       border-bottom: 2px solid black;
+       outline: 0;
+       font-size: 1.3rem;
+       color:gray;
+       padding: 7px 0;
+       background: transparent;
+      } 
+      .img{
+        margin-top: 80px;
+      }
+      /* sheet 2 */
+      H2{
+        padding-left: 20px;
+        font-size: 80PX;
+        color: black;
+        font-style: italic;
+        padding-bottom: 60px;
+      }
+      .sheet2{
+        padding-top: 150px;
+      }
+      .s2{
+        text-decoration: none;
+        margin-top: 50px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="main">
+      <h1>WebTechnology</h1>
+        <div class="bar">
+            <a href=""> <img class="im" src="home.png" alt=""></a>
+            <!-- <a href=""> <img class="im" src="account.png" alt=""></a> -->
+            <a href="#notes"> <img class="im" src="pencil.png" alt=""></a>
+            <form action="https://www.google.com/search" method="get" class="search-bar" id="sea" >
+              <input type="text" class="sbar" placeholder="Search Website" name="q" id="searchbar" >
+              <button type="submit"><img src="search.png" alt="" height="40px" width="40px"></button>
+          </form>
+        </div>
+    </nav>
+    <center>
+       <img class="img" src="m2.jpg" alt="" height="550px" width="800px">
+      </center>
+      <!-- sheet 2 -->
+       <div class="sheet2" id="notes">
+        <a class="s2" href="ht.html"><h2>HTML</h2></a>
+        <a class="s2" href="cs.html"><h2>CSS</h2></a>
+        <a class="s2" href="js.html"><h2>JAVA SCRIPT</h2></a>
+       </div>
+</body>
+</html>
